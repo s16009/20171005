@@ -1,5 +1,5 @@
-select employee_id, last_name, salary, salary + salary * 0.155 "New Saraly"
+select employee_id, last_name, salary, round(salary + salary * 0.155) "New Salary"
 from employees
-order by "New Saraly"
+order by "New Salary"
 fetch first 5 rows only
 /
